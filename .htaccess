@@ -2,7 +2,7 @@ RewriteEngine On
 
 # Redirect from /index.html to root URL
 RewriteCond %{HTTPS} on
-RewriteRule ^index\.html$ https://bio3a.pt/pt [L,R=301]
+RewriteRule ^index\.html$ https://www.3us-invest.com/pt [L,R=301]
 
 # Remove .html extension
 RewriteCond %{REQUEST_FILENAME}.html -f
@@ -11,3 +11,7 @@ RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [L]
 # Redirect from .html URLs to plain
 RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?/] [NC]
 RewriteRule ^ /%1 [R=302,L,NE]
+
+# 404 error Redirect
+ErrorDocument 404 /404.html
+
