@@ -108,7 +108,7 @@
 
 /* Menu + fix mobile */
 .wrapper-menu {
-    padding: 14px 100px 14px 100px !important;
+    padding: 14px 100px !important;
     display: flex;
     justify-content: center;
     max-width: none !important;
